@@ -17,7 +17,7 @@ def get_data():
     d = d.drop(['Change'], axis=1) # Drop 'Change'
     return apply_funcs_to_df(d, 'Last', 'Open', 'High', 'Low')
     
-def get_raw_gold(APIdata="https://www.quandl.com/api/v3/datasets/CHRIS/CME_GC2.csv?api_key=wS-6Y6C9kfiXmePjwrzq&collapse=monthly"):
+def get_raw_gold(APIdata="https://www.quandl.com/api/v3/datasets/CHRIS/CME_GC2.csv?api_key=<API_Key>&collapse=monthly"):
     return pd.read_csv(APIdata) # a DataFrame
 
 
